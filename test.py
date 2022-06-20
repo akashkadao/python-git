@@ -13,4 +13,3 @@ def test3():
     assert b"My Friend List" in response.data
     assert b"Added Friend" in response.data    
     assert b"Add" in response.data 
-    assert b"Delete" in response.data 
