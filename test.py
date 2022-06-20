@@ -12,6 +12,5 @@ def test3():
     response = app.test_client().get("/base")
     assert b"My Friend List" in response.data
     assert b"Added Friend" in response.data
-    assert b"krunal" in response.data
     assert b"mohit" in response.data
     
