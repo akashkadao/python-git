@@ -9,4 +9,4 @@ metadata:
 spec:
   containers:
     - name: myfirstpod
-      image: akashkadao/python-git
+      image: akashkadao/python-git:v2.0.0
