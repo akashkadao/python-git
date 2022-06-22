@@ -45,6 +45,6 @@ jobs:
       with:
           context: .
           file: ./Dockerfile
-          push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/python-git:v1.0.0
+  #        push: true
+          tags: ${{ secrets.DOCKER_USERNAME }}/python-git:v2.0.0
 
