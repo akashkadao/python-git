@@ -35,8 +35,6 @@ jobs:
       run: docker run hello-world
     - name: push to Docker Hub
       uses: docker/build-push-action@v3.0.0
-      with: 
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-        repository: docker push akashkadao/python-git
-        tag_with_ref: true
+      with:
+        name: Login to DockerHub Registry
+        run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
