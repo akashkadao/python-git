@@ -1,6 +1,6 @@
 ##Deploying first pod 
 apiVersion: v1
-kind: pod
+kind: Pod
 metadata: 
   name: myfirstpod
   labels:
