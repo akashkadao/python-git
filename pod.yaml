@@ -1,0 +1,12 @@
+##Deploying first pod 
+apiVersion: v1
+kind: pod
+metadata: 
+  name: myfirstpod
+  labels:
+    app: flask
+
+spec:
+  containers:
+    - name: myfirstpod
+      image: akashkadao/python-git

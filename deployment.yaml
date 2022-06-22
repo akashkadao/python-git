@@ -1,0 +1,24 @@
+##creating deployments for quick uypdates and rollbacks
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myfirstpod
+  labels:
+    app: flask
+
+spec:
+  template:
+    metadata:
+      name: myfirstpod
+      labels:
+        app: flask
+
+    spec:
+      containers:
+        - name: myfirstpod
+          image: akashkadao/python-git
+
+  replicas: 3
+  selector:
+    matchlabels:
+      app: flask        
